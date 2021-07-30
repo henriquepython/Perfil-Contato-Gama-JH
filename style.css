@@ -1,10 +1,32 @@
-html{
-    font-size: 62.5%;
+*{
+    /*font-size: 1.6rem;*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
 }
+
+/*html{
+    font-size: 62.5%;
+}*/
 .logo{
     width: 15rem;
-    height: 8rem;
+    height: 15rem;
+    border-radius: 3rem;
+    
 }
-*{
-    font-size: 1.6rem;
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    
 }
