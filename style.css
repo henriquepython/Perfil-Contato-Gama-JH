@@ -27,7 +27,10 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 5px;
+    padding: 10px;
+    /*border-bottom: 1px solid white; */
+    /*box-shadow: 1px 1px 10px 1px white;*/
+    /*border-bottom: 15px ridge yellowgreen;*/
    
 }
 
@@ -38,6 +41,10 @@ body{
 
 .menu ul li{
     padding: 5px;
+    border-right: 2px dashed white;
+}
+.menu ul li:first-child{
+    border-left: 2px dashed white;
 }
 
 .logo{
@@ -60,6 +67,8 @@ body{
 .form{
     width: 40%;
     margin: 0 auto;
+    border: thick double white;
+    padding: 25px;
 }
 
 .form input{
