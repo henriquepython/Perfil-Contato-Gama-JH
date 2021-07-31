@@ -29,7 +29,7 @@ body{
     align-items: center;
     padding: 10px;
     /*border-bottom: 1px solid white; */
-    /*box-shadow: 1px 1px 10px 1px white;*/
+    box-shadow: 1px 1px 10px 1px white;
     /*border-bottom: 15px ridge yellowgreen;*/
    
 }
@@ -47,13 +47,23 @@ body{
     border-left: 2px dashed white;
 }
 
+.menu ul li a{
+    transition: 300ms;
+}
+.menu ul li a:hover{
+    color: yellowgreen;
+    text-decoration: underline;
+}
+
 .logo{
     width: 80px;
     height: 80px;
     border-radius: 48px;
 }
+
 .container{
     text-align: center;
+    padding-top: 70px;
 }
 
 .container .name h1{
@@ -73,17 +83,35 @@ body{
 
 .form input{
     width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
 }
 
 .form button{
     width: 15%;
+    padding: 5px 10px;
+    background-color: yellowgreen;
     color: black;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 300ms;
+    border-radius: 0px 5px 5px 0px;
+    margin-top: 20px;
+    margin-left: -5px;
+    
+}
+.form button:hover{
+    background-color: blue;
+    color: white;
 }
 
 .ferramentas{
     font-size: 30px;
     display: flex;
     justify-content: space-evenly;
+    padding-top: 30px;
 }
 
 #about{
