@@ -144,3 +144,26 @@ body{
 .descri{
     font-size: 20px;
 }
+
+@media only screen and (max-width: 768px){
+    .form{
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 480px){
+    
+    .container .name h1{
+        font-size: 30px;
+    }
+
+    .container .name h5{
+        font-size: 15px;
+    }
+
+    #about p{
+        max-width: 80%;
+        text-align: justify;
+    }
+}
