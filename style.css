@@ -74,11 +74,34 @@ body{
     font-size: 25px;
 }
 
+#arrow{
+    font-size: 35px;
+    cursor:  pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink{
+    to{
+        visibility: hidden;
+    }
+}
+
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
 .form{
     width: 40%;
     margin: 0 auto;
     border: thick double white;
     padding: 25px;
+    margin-top: 30px;
 }
 
 .form input{
@@ -116,4 +139,8 @@ body{
 
 #about{
     margin-bottom: 30px;
+}
+
+.descri{
+    font-size: 20px;
 }

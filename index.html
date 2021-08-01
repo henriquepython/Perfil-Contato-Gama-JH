@@ -35,17 +35,16 @@
 
     <main>
         <section class="container">
-            <div class="name">
-                <h1>João Henrique B. Cerqueira</h1>
-                <h5>Front-End Developer</h5>
-            </div>
+                <div class="name">
+                    <h1>João Henrique B. Cerqueira</h1>
+                    <h5>Front-End Developer</h5>
+                </div>
             
-            <div id="arrow">
-                
-                <i class="fas fa-sort-down"></i>
-                
-                <div id="about">
-                    <p>
+                <div onclick="displayAbout()" id="arrow">                  
+                    <i id="animation"  class="fas fa-sort-down"></i>
+                </div>  
+                <div style="display: none;" id="about">
+                    <p class="descri">
                         Fazer o que ama, amar o que faz, e ser feliz no caminha, Life Long Learning.
                     </p><br>
                     
@@ -67,9 +66,17 @@
                         <button>enviar!</button>
                     </form>
                 </div>
-            </div>
+           
        
         </section>
     </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var arrow = document.getElementById('about');
+            arrow.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
